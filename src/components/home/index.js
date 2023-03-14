@@ -9,6 +9,7 @@ import Vector2 from "../../assets/vector2.svg";
 import EmojiSad from "../../assets/emojisad.svg";
 import EmojiNormal from "../../assets/emojinormal.svg";
 import EmojiHappy from "../../assets/emojihappy.svg";
+import {BiSearch} from "react-icons/bi";
 
 export default function Home() {
 
@@ -31,6 +32,11 @@ export default function Home() {
     return (
         <section>
             <Header/>
+            <div className="px-14 flex-1 pt-14">
+                <div className="border border-gray-300 rounded w-full flex py-3 px-3 items-center rounded-xl w-[28%] ml-[39em]">
+                    <BiSearch className="mr-2"/>
+                    <input type={"text"} className="flex-1" placeholder="Search"/>
+                </div>
             <div className="h-screen md:flex">
 
                 <div className="relative self-start overflow-hidden md:flex flex-1 bg-white justify-around items-center">
@@ -100,6 +106,7 @@ export default function Home() {
                     </div>
 
                 </div>
+            </div>
             </div>
         </section>
 
