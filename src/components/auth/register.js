@@ -115,12 +115,12 @@ export default function Register(props) {
 
                         <div className="mb-4 max-w-sm">
                             <label className="block text-grey-darker text-sm mb-2" htmlFor="fullness">
-                            Full Name
+                            Nama Lengkap
                         </label>
                             <input className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                   id="fullName"
+                                   id="fullNama"
                                    type="text"
-                                   placeholder="Full Name"
+                                   placeholder="Nama Lengkap"
                                    name="fullName"
                                    onChange={handleInputChange}
                                    value={dataForm.fullName}
@@ -133,7 +133,7 @@ export default function Register(props) {
                             <input className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                    id="email"
                                    type="email"
-                                   placeholder="@gmail"
+                                   placeholder="nama@gmail"
                                    name="email"
                                    onChange={handleInputChange}
                                    value={dataForm.email}
@@ -154,12 +154,12 @@ export default function Register(props) {
                         </div>
                         <div className="mb-6 max-w-sm">
                             <label className="block text-grey-darker text-sm mb-2" htmlFor="fullness">
-                                Correct Password
+                                Konfirmasi Password
                             </label>
                             <input className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                    id="verifyPassword"
                                    type="password"
-                                   placeholder="Password"
+                                   placeholder=" Konfirmasi Password"
                                    name="verifyPassword"
                                    onChange={handleInputChange}
                                    value={dataForm.verifyPassword}
@@ -183,7 +183,13 @@ export default function Register(props) {
                         </div>
 
                         <div>
-                            <p>Already Have Account <span className="text-blue-700" onClick={goToLogin}>Log in?</span></p>
+                            <p>Sudah memiliki akun <span className="text-blue-700" onClick={goToLogin}>Log in?</span></p>
+                        </div>
+
+                        <div>
+                            <button onClick={() => setTestAja("Hello Dor...")}>
+                                Test Button Here
+                            </button>
                         </div>
 
                         <div>

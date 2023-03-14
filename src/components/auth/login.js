@@ -101,12 +101,12 @@ export default function Login(props) {
                     <div className="w-full px-8">
 
                         <h1 className="text-gray-800 font-bold text-2xl mb-6">Log In</h1>
-                        <p className="text-sm font-normal text-gray-600 mb-6">Wellcome back, report and fix your bug</p>
+                        <p className="text-sm font-normal text-gray-600 mb-6">Selamat datang di aplikasi ticketing, silahkan login!</p>
                         <form onSubmit={handleFormSubmit}>
 
                             <div className="mb-4 max-w-sm">
                                 <label className="block text-grey-darker text-sm mb-2" htmlFor="username">
-                                    Username
+                                    Email
                                 </label>
                                 <input
                                     type="email"
@@ -148,7 +148,7 @@ export default function Login(props) {
                                     }
                                 </button>
                                 <div>
-                                    <p>Don't have an account?<span className="text-blue-700" onClick={goToRegister}> Sign Up</span></p>
+                                    <p>Tidak memiliki akun?<span className="text-blue-700" onClick={goToRegister}> Sign Up</span></p>
                                 </div>
                             </div>
                         </form>
