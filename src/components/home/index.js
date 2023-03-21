@@ -10,6 +10,7 @@ import EmojiSad from "../../assets/emojisad.svg";
 import EmojiNormal from "../../assets/emojinormal.svg";
 import EmojiHappy from "../../assets/emojihappy.svg";
 import {BiSearch} from "react-icons/bi";
+import Notification from "../../assets/notification.svg";
 
 export default function Home() {
 
@@ -32,19 +33,28 @@ export default function Home() {
     return (
         <section>
             <Header/>
-            <div className="px-14 flex-1 pt-14">
-                <div className="border border-gray-300 rounded w-full flex py-3 px-3 items-center rounded-xl w-[28%] ml-[39em]">
-                    <BiSearch className="mr-2"/>
-                    <input type={"text"} className="flex-1" placeholder="Search"/>
-                </div>
             <div className="h-screen md:flex">
 
                 <div className="relative self-start overflow-hidden md:flex flex-1 bg-white justify-around items-center">
                     <div className="w-full mt-8">
+                    <div className="border border-gray-300 rounded flex py-1 px-1 items-center rounded-xl w-[460px] ml-[39em]">
+                                <BiSearch className="mr-2"/>
+                                <input type={"text"} className="py-2 px-4 pr-10 block w-full rounded-md border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Search"/>
+                            <div className="absolute insert-y-0 right-8 flex items-center pr-2">
+                            <div className="border border-gray-300 rounded flex py-3 px-3 items-center rounded-xl w-[28%] ml-[39em]">
+                                <img className="max-w-lg" src={Notification} alt="logo" />
+                            </div>
+                        </div>
+                    </div>
                         <div className="w-full md:flex mx-8">
 
+
+                        <div className="px-14 flex-1 pt-14">
+                            
+                            </div>
+
                             <div className="relative overflow-hidden md:flex w-1/4 bg-white justify-between items-center hidden">
-                                <button className="absolute w-36 h-8 bottom-14 left-3 top-4 right-8 bg-neutral-700 ml-8 mr-12 text-white rounded-xl hover:bg-blue-500">
+                                <button className="absolute w-36 h-8 bottom-14 left-3 top-4 right-8 bg-neutral-700 ml-8 mr-12 text-white">
                                     <span className="text-2xl mr-1"></span> <strong> Total Tiket</strong>
                                 </button>
                                 <div className="bg-bg-black-card rounded-2xl w-56 h-56"></div>
@@ -61,7 +71,7 @@ export default function Home() {
                                 <div className="bg-bg-red-card rounded-2xl w-56 h-56"></div>
                                 <button className="absolute w-56 h-14 bottom-0 rounded-b-lg left-0 right-0 bg-gray-50">
                                 </button>
-                               <button className="absolute w-32 h-8 left-12  bottom-3 rounded-lg left-0 right-0 bg-red-500">
+                               <button className="absolute w-32 h-8 left-12  bottom-3 rounded-lg left-0 right-0 bg-red-500 rounded-xl hover:bg-red-600">
                                     <span className="font-semibold text-xs leading-6 text-slate-50">Detail</span>
                                 </button>
                             </div>
@@ -74,7 +84,7 @@ export default function Home() {
                                 <div className="bg-bg-yellow-card rounded-2xl w-56 h-56"></div>
                                 <button className="absolute w-56 h-14 bottom-0 rounded-b-lg left-0 right-0 bg-gray-50">
                                     </button>
-                                <button className="absolute w-32 h-8 left-12  bottom-3 rounded-lg left-0 right-0 bg-yellow-600">
+                                <button className="absolute w-32 h-8 left-12  bottom-3 rounded-lg left-0 right-0 bg-yellow-600 rounded-xl hover:bg-yellow-700">
                                     <span className="font-semibold text-xs leading-6 text-slate-50">Detail</span>
                                 </button>
                             
@@ -87,11 +97,28 @@ export default function Home() {
                                 <div className="bg-bg-blue-card rounded-2xl w-56 h-56"></div>
                                 <button className="absolute w-56 h-14 bottom-0 rounded-b-lg left-0 right-0 bg-gray-50">
                                 </button>
-                                <button className="absolute w-32 h-8 left-12  bottom-3 rounded-lg left-0 right-0 bg-blue-500">
+                                <button className="absolute w-32 h-8 left-12  bottom-3 rounded-lg left-0 right-0 bg-blue-500 rounded-xl hover:bg-blue-600">
                                     <span className="font-semibold text-xs leading-6 text-slate-50">Detail</span>
                                     </button>
+
+                                    <div className="relative self-start">
+                                    </div>
                             </div>
                         </div>
+                        <div className='bg-'>block</div>
+                        <div className="relative self-start overflow-hidden md:flex flex-1 bg-white justify-around items-center">
+                        <img className="max-w-lg" src={IconTiket} alt="logo" />
+                        <button className="absolute h-11 bottom-14 left-6 right-6 bg-blue-500 ml-8 mr-8 text-white rounded-xl hover:bg-blue-600">
+                            <span className="absolute text-2xl mr-3">+</span> <strong>Add Ticket</strong>
+                        </button>
+
+                    </div>
+                        
+                    </div>
+
+
+                    <div className="flex w-421 justify-left items-center border-l">
+                        
                     </div>
                 </div>
 
@@ -106,7 +133,6 @@ export default function Home() {
                     </div>
 
                 </div>
-            </div>
             </div>
         </section>
 
